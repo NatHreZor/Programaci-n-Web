@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>  
+    
+    <title>Universidad Industrial de Santander</title>    
+    <style>fieldset{ width:350px;}</style>  
+
+</head>
+
+<body>
+
+    <form>
+        <h1>Rellena tu CV</h1>
+        
+        Nombre<br>
+        <input type="text" name="nombre" value><br>
+
+        Apellidos<br>
+        <input type="text" name="apellido" value=""><br>
+
+        Contraseña<br>
+        <input type="password" name="contrasena"><br>
+
+        Confirme Contraseña<br>
+        <input type="password" name="confirmar"><br>
+        
+        <br>
+        Identificación<br>
+        <select name="identificacion">
+            <option value="tarjeta">TI</option>
+            <option value="cedula">CC</option>
+            <option value="pasaporte">PAP</option>
+        </select>
+        <input type="text" name="identificacion"><br>    
+        
+        <br>
+        sexo<br>
+        <input type="radio" name="sexos" value="hombre" checked>
+        Hombre<br>
+        <input type="radio" name="sexos" value="mujer">
+        Mujer<br>
+        
+        <br>
+        Incluir mi foto<br>
+        <input type="file" name="foto"><br>
+        
+        <br>
+        <input type="checkbox" name="roles" value="rol" checked>
+        Estudiante<br>
+
+        <br>
+        
+        <fieldset>
+        
+        <legend>Datos Personales</legend>
+        
+        Departamento<br>
+        <select name="departamentos">
+            <option hidden disabled selected value>-selecciona-</option>
+            <option value="departamento1">Santander</option>
+            <option value="departamento2">Cundinamarca</option>
+        </select>
+        
+        <br><br>
+        Fecha de Nacimiento<br>
+        <input type="text" name="dia" value size="1"> de
+        <select name="meses">
+            <option value="mes1">Enero</option>
+            <option value="mes1">Febrero</option>
+            <option value="mes1">Marzo</option>
+        </select> de 
+        <input type="text" name="año" value size="5">
+        
+        <br><br>
+        Temas de interés<br>
+        <textarea name="temas" rows="5" cols="30">
+        </textarea>
+        </fieldset>
+        
+        <br>
+        <input type="submit" name="enviar" value="Guardar cambios">
+        <input type="reset" name="limpiar" value="Borrar los datos introducidos">
+    
+    </form>
+
+</body>
+
+</html>
