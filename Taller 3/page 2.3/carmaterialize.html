@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.0/css/materialize.min.css">
+    <link rel="stylesheet" href="https://materializecss.com/css/prism.css">
+    <link rel="stylesheet" href="https://materializecss.com/css/ghpages-materialize.css">
+  
+    <script src="https://cpwebassets.codepen.io/assets/editor/iframe/iframeConsoleRunner-d0f3648046d2aaca07bd0037b9e061a26c74a8a999b75672ad6a638cca641472.js"></script>
+    <script src="https://cpwebassets.codepen.io/assets/editor/iframe/iframeRefreshCSS-4793b73c6332f7f14a9b6bba5d5e62748e9d1bd0b5c52d7af6376f3d1c625d7e.js"></script>
+    <script src="https://cpwebassets.codepen.io/assets/editor/iframe/iframeRuntimeErrors-4f205f2c14e769b448bcf477de2938c681660d5038bc464e3700256713ebe261.js"></script>
+    <script src="https://cpwebassets.codepen.io/assets/common/stopExecutionOnTimeout-1b93190375e9ccc259df3a57c1abc0e64599724ae30d7ea4c6877eb615f89387.js"></script>
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.0/js/materialize.min.js"></script>
+    <script src="https://materializecss.com/js/prism.js"></script>
+    <script  src="https://cdpn.io/cp/internal/boomboom/pen.js?key=pen.js-968205a7-9671-7ff6-cb4e-a262ffe74492" crossorigin></script>
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <script src="https://cdn.rawgit.com/labnol/files/master/yt.js"></script>
+    <script src="script.js"></script>
+    <title>Registro automovil</title>
+</head>
+<body>
+ <div class="container">
+  <div class="row">
+    <form class="col s12" id="reg-form">
+      <div class="row">
+        <div class="input-field col s4">
+          <select id="ID coche">
+            <option hidden disabled selected value>ID coche</option>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+          </select>
+        </div>
+        <div class="input-field col s4">
+          <select id="Combustible" class="form-control">
+            <option hidden disabled selected value>Combustible</option>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+          </select>
+        </div>
+        <div class="input-field col s4">
+          <select id="Tipo coche" class="form-control">
+            <option hidden disabled selected value>Tipo coche</option>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+          </select>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s4">
+          <select id="Estado" class="form-control">
+            <option hidden disabled selected value>Estado</option>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+          </select>
+        </div>
+        <div class="input-field col s4">
+          <select id="Marca" class="form-control">
+            <option hidden disabled selected value>Marca</option>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+          </select>
+        </div>
+        <div class="input-field col s4">
+          <select id="ID usuario" class="form-control">
+            <option hidden disabled selected value>ID usuario</option>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+          </select>
+        </div>
+        <div class="input-field col s6">
+          <input id="modelo" type="text" class="validate" required>
+          <label for="modelo">Modelo</label>
+        </div>
+        <div class="input-field col s6">
+          <input id="año" type="text" class="validate" required>
+          <label for="año">Año</label>
+        </div>
+        <div class="input-field col s12">
+          <textarea id="Detalles" name="Detalles" class="validate" placeholder="Detalles" required></textarea>
+        </div>
+        <div class="input-field col s6">
+          <input id="numero caja" type="text" class="validate" required>
+          <label for="numero caja">Numero caja</label>
+        </div>
+        <div class="input-field col s6">
+          <input id="motor" type="text" class="validate" required>
+          <label for="motor">Motor</label>
+        </div>
+        <div class="input-field col s4">
+          <input id="fecha" type="date" class="validate" required>
+          <label id="fechalabel" for="fecha">Fecha de publicacion</label>
+        </div>
+        <div class="input-field col s4">
+          <select  class="form-control">
+            <option hidden disabled selected value>Moneda</option>
+            <option id="dol">Dolar</option>
+            <option>Libra</option>
+            <option>Peso</option>
+          </select>
+        </div>
+        <div class="input-field col s4">
+          <input id="precio" type="text" class="validate" required>
+          <label for="precio">Precio</label>
+        </div>
+      </div>
+      
+      <div class="row">
+        <div class="input-field col s6">
+          <button class="btn btn-large btn-register waves-effect waves-light" type="submit" name="action">Registrar</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+        
+</body>
+</html>

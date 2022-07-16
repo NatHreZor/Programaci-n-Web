@@ -1,0 +1,76 @@
+body {
+    background: url("https://unsplash.it/1200/800/?random");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  .container {
+    background: white;
+    padding: 10px 20px;
+    border: 5px solid #26a69a;
+    width: 550px;
+    height: 100%;
+    box-sizing: border-box;
+    position: relative;
+  }
+  .col.s6 > .btn {
+    width: 100%;
+  }
+  .gender-male,
+  .gender-female {
+    display: inline-block;
+  }
+  .gender-female {
+    margin-left: 35px;
+  }
+  radio:required {
+    border-color: red;
+  }
+  .container {
+    animation: showUp 0.5s cubic-bezier(0.18, 1.3, 1, 1) forwards;
+  }
+  
+  @keyframes showUp {
+    0% {
+      transform: scale(0);
+    }
+    100% {
+      transoform: scale(1);
+    }
+  }
+  .row {
+    margin-bottom: 10px;
+  }
+  
+  .ngl {
+    position: absolute;
+    top: -20px;
+    right: -20px;
+  }
+
+  textarea{
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 50px;
+    border:0;
+    border-bottom: 1px solid #222;
+  }
+
+.select-dropdown,
+#fecha{
+  color:#9e9e9e;
+}
+
+#fechalabel{
+  color:black !important;
+}
+
+  
+
+ 
+  
+  
