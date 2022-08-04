@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans:400,400i,700,700i&subset=greek-ext');
+
+body{
+	background-image: url("https://www.wallpapertip.com/wmimgs/28-283717_kantai-collection-urakaze-car-back-view-blue-hair.png");
+	background-position: center;
+    background-origin: content-box;
+    background-repeat: no-repeat;
+    background-size: cover;
+	min-height:100vh;
+	font-family: 'Noto Sans', sans-serif;
+	width: 90%;
+	height: 90%;
+}
+
+.body form{
+color: #555;
+}
+.text-center{
+	color:#fff;	
+	text-transform:uppercase;
+    font-size: 23px;
+    margin: 0 0px 20px 0;
+    display: block;
+    text-align: center;
+}
+.box{
+	position:absolute;
+	left:50%;
+	top:50%;
+	transform: translate(-50%,-50%);
+    background-color: rgba(0, 0, 0, 0.89);
+	border-radius:3px;
+	padding:50px 50px;
+}
+.input-container{
+	position: relative;
+	margin-bottom:15px;
+}
+.input-container label{
+	position:absolute;
+	top:0px;
+	left:0px;
+	font-size:16px;
+	color:#fff;	
+    pointer-event:none;
+	transition: all 0.5s ease-in-out;
+}
+.input-container input{ 
+  border:0;
+  border-bottom:1px solid #555;  
+  background:transparent;
+  width:100%;
+  padding:8px 0 5px 0;
+  font-size:16px;
+  color:#fff;
+}
+
+.input-container input:focus{ 
+ border:none;	
+ outline:none;
+ border-bottom:1px solid #e74c3c;	
+}
+.btn{
+	color:white;
+	background-color:#e74c3c;
+	outline: none;
+    border: 0;
+    color: #fff;
+	padding:10px 20px;
+	text-transform:uppercase;
+	margin-top:30px;
+	border-radius:2px;
+	cursor:pointer;
+	position:relative;
+
+}
+.btn:right{
+	content:"";
+	position:absolute;
+	background:rgba(0,0,0,0.50);
+	top:0;
+	right:0;
+}
+.input-container input:focus ~ label,
+.input-container input:valid ~ label{
+	top:-12px;
+	font-size:12px;
+	
+}
+
+select {
+    border: none;
+    background-color: transparent;
+	color: #fff;	
+ 	outline:none;
+	border-bottom:1px solid #555;
+	font-size: 16px;
+}
+select option{
+	color: black;
+}
+.input-container select:focus{ 
+ border:none;	
+ outline:none;
+ border-bottom:1px solid #e74c3c;	
+}
+
+textarea{
+    resize: vertical;
+    background-color: transparent;
+    border: none;
+    border-bottom:1px solid #555;
+    color:#fff;
+    min-width: 100%;
+    min-height: 30px;
+    max-height: 80px;
+}
+
+input::placeholder {
+    color:#fff;
+  }
+
+textarea::placeholder{
+    font-size:16px;
+    color:#fff;
+}
+  
+input[type=date]{
+    text-align: left;
+    max-width: 35%;
+    margin-top:15px;
+}
+
+input[type=date]::-webkit-calendar-picker-indicator {
+    background-color:#e74c3c;
+}
+input[type=date]::-webkit-calendar-picker-indicator:hover {
+    background-color: #e23623;
+    color: #e6e6e6;
+    cursor: pointer;
+}
+
+.inputt input{ 
+    max-width: 40%;
+    float:left;
+    border:0;
+    border-bottom:1px solid #555;  
+    background:transparent;
+    width:100%;
+    padding:8px 0 5px 0;
+    font-size:16px;
+    color:#fff;
+  }
+
+  #yes{
+      float:right;
+      margin-top:20px;
+      margin-left:0px;
+  }
+
+  #moneda{
+    text-align: center;
+    margin-top:32px;
+    margin-left:10px;     
+  }
+

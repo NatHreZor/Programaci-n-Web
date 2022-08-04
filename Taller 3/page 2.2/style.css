@@ -1,0 +1,24 @@
+img {width:100%;}
+
+body{
+    background: url("https://unsplash.it/1200/800/?random");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+input::placeholder{
+    color:black !important;
+    font-weight: 20 !important;
+}
+select option{
+    color:black !important;
+}
+
+.col-md-8{
+    background-color: white !important;
+}
+
+#cold,
+#fecha{
+    margin-bottom: 1px !important;
+}

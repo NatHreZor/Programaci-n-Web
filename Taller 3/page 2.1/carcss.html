@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registo de Automovil</title>
+    <meta charset="UTF-8"/>
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body class="body">
+    <div class="box">
+        <form>
+            <span class="text-center">Registro Automovil</span>
+            <div class="input-container">
+                <select name="coche">
+                    <option hidden disabled selected value>ID coche</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                </select>		
+                <select name="Combustible">
+                    <option hidden disabled selected value>Combustible</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                </select>
+                <select name="Tcoche">
+                    <option hidden disabled selected value>Tipo coche</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                </select>			
+                <select name="estado">
+                    <option hidden disabled selected value>Estado</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                </select>		
+                <select name="Marca">
+                    <option hidden disabled selected value>Marca</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                </select>	
+                <select name="user">
+                    <option hidden disabled selected value>ID Usuario</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                </select>		
+            </div>
+            <div class="input-container">
+                <input type="text" required=""/>
+                <label>Modelo</label>		
+            </div>	
+            <div class="input-container">
+                <input type="text" required=""/>
+                <label>Año</label>		
+            </div>
+            <div class="input-container">
+                <textarea placeholder="Detalles"></textarea>
+                	
+            </div>
+        <div class="input-container">
+            <input type="number" required="" min="0" placeholder="numero Caja"/>
+        </div>
+        <div class="input-container">
+            <input type="number" required="" min="0"/>
+            <label>Motor</label>		
+        </div>
+        <div class="input-container">
+            <div class="inputt">
+                <label>fecha publicación</label>
+                <input type="date">
+                <select id="moneda">
+                    <option hidden disabled selected value>moneda</option>
+                    <option>Dolar</option>
+                    <option>Libra</option>
+                    <option>Peso</option>
+                </select>
+                <input type="text" id="yes" required="" placeholder="Precio"/>
+            </div>
+            <!--<input type="text" required="" placeholder="Precio"/>
+            <label>fecha de publicación</label>
+            -->   
+        </div>
+        
+        <button type="button" class="btn">submit</button>
+    </form>	
+    </div>
+</body>
+</html>

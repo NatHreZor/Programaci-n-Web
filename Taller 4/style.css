@@ -1,0 +1,330 @@
+*{
+
+    margin:0%;
+    padding: 0%;
+
+}
+
+body{
+
+    background-image: url("https://www.xtrafondos.com/descargar.php?id=3721&resolucion=3840x2160");
+	background-position: center;
+    background-origin: content-box;
+    background-repeat: no-repeat;
+    background-size: cover;
+	min-height:100vh;
+	font-family: 'Noto Sans', sans-serif;
+	width: 90%;
+	height: 90%;
+}
+
+.ru{
+
+    width: 800px;
+    background-color: rgb(0, 0, 0, 6);
+    margin: auto;
+    color: #FFFFFF;
+    padding: 10px 0px 10px 0px;
+    text-align: center;
+    border-radius: 15px 15px 0px 0px ;
+
+}
+
+.main{
+
+    background-color: rgb(0, 0, 0, 0.5);
+    width: 800px;
+    margin: auto;
+
+}
+
+form{
+
+    padding-top: 10px;
+
+}
+
+#subtitle{
+
+    width: 100%;
+    height: 100px;
+
+}
+
+.subtitle{
+
+    margin-left: 25px;
+    margin-top: 30px;
+    width: 125px;
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+
+}
+
+.name{
+
+    position: relative;
+    left: 200px;
+    top: -37px;
+    line-height: 40px;
+    border-radius: 6px;
+    padding: 0 22px;
+    font-size: 16px;
+
+}
+
+.lastname{
+
+    position: relative;
+    left: 417px;
+    top: -98px;
+    line-height: 40px;
+    border-radius: 6px;
+    padding: 0 22px;
+    font-size: 16px;
+    color: #555;
+}
+
+.labelname{
+
+    position: relative;
+    color: #E5E5E5;
+    text-transform: capitalize;
+    font-size: 14px;
+    left: 203px;
+    top: -60px;
+
+}
+
+.labellastname{
+
+    position: relative;
+    color: #E5E5E5;
+    text-transform: capitalize;
+    font-size: 14px;
+    left: 175px;
+    top: -60px;
+
+}
+
+.IU{
+
+    position: relative;
+    left: 200px;
+    width: 470px;
+    top: -37px;
+    line-height: 40px;
+    border-radius: 6px;
+    padding: 0 22px;
+    font-size: 16px;
+
+
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none; 
+    margin: 0; 
+}
+
+.password, .Cpassword{
+
+    position: relative;
+    left: 200px;
+    width: 470px;
+    top: -37px;
+    line-height: 40px;
+    border-radius: 6px;
+    padding: 0 22px;
+    font-size: 16px;
+
+}
+
+.direccion{
+
+    position: relative;
+    left: 200px;
+    top: -37px;
+    line-height: 40px;
+    width: 470px;
+    border-radius: 6px;
+    padding: 0 22px;
+    font-size: 16px;
+    color: #555;
+
+}
+
+.email{
+
+    position: relative;
+    left: 200px;
+    top: -37px;
+    line-height: 40px;
+    width: 470px;
+    border-radius: 6px;
+    padding: 0 22px;
+    font-size: 16px;
+    color: #555;
+
+}
+
+
+.number{
+
+    position: relative;
+    left: 200px;
+    top: -37px;
+    line-height: 40px;
+    width: 470px;
+    border-radius: 6px;
+    padding: 0 22px;
+    font-size: 16px;
+    color: #555;
+
+}
+
+
+.labelnumber{
+
+    position: relative;
+    color: #E5E5E5;
+    text-transform: capitalize;
+    font-size: 14px;
+    left: -320px;
+    top: -2px;
+
+
+}
+
+.option{
+
+    position: relative;
+    left: 200px;
+    top: -20px;
+    line-height: 40px;
+    width: 520px;
+    height: 40px;
+    border-radius: 6px;
+    padding: 0 22px;
+    font-size: 16px;
+    color: #555;
+
+}
+
+.option option{
+
+    font-size: 20px;
+
+}
+
+#boton{
+
+    position: relative;
+    left: 250px;
+    top: -10px
+}
+
+button{
+    margin-left: -50px;
+    background-color: #3BAF9F;
+    display: block;
+    margin: 20px 0px 20px 0px;
+    text-align: center;
+    border-radius: 12px;
+    border: 2px solid #366473;
+    padding: 14px 110px;
+    outline: none;
+    color: white;
+    cursor: pointer;
+    transition: 0.25px;
+    
+}
+
+button:hover{
+
+    background-color: #5390F5;
+
+}
+
+/* ---- Añadiendo Gustos del Usuario ---- */
+
+.GUDIV{
+
+    padding: 0.5cm;
+    display: none;
+
+}
+
+.GU{
+
+
+    color: white;
+    font-size: 2em;
+    font-weight: 700;
+    text-align: center;
+
+}
+
+.fp{
+
+    margin-left: 25px;
+    color: white;
+    font-size: 1.3em;
+    font-weight: 700;
+    text-align: center
+
+}
+
+.dig{
+
+    margin-left: 20px;
+    width: 0.5cm;
+    height: 0.5cm;
+
+}
+
+.sp{
+
+    margin-left: 25px;
+    margin-top: 30px;
+    width: 125px;
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+
+}
+
+.disenosp{
+
+    
+    position: relative;
+    left: 6.5cm;
+    top: -37px;
+    line-height: 40px;
+    border-radius: 6px;
+    padding: 0 22px;
+    font-size: 16px;
+}
+
+.tp{
+
+    margin-left: 25px;
+    color: white;
+    font-size: 1.3em;
+    font-weight: 700;
+    text-align: center;
+
+}
+
+.valor{
+
+    position: relative;
+    left: 5cm;
+    line-height: 40px;
+    border-radius: 6px;
+    padding: 0 22px;
+    font-size: 16px;
+    width: 8cm;
+
+}

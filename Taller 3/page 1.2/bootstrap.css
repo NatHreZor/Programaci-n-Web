@@ -1,0 +1,25 @@
+img {width:100%;}
+
+.card-body h2{
+    font-size: 23px;
+    margin: 0 px 20px 0;
+    padding:20% 0 20% 0;
+    text-align: center;
+    text-transform:uppercase;
+}
+
+.card-body img{
+    margin-top: 15%;
+    margin-bottom: 5%;
+    width: 25%;
+    -webkit-animation: mover 2s infinite  alternate;
+    animation: mover 1s infinite  alternate;
+}
+@-webkit-keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-20px); }
+}
+@keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-20px); }
+}
