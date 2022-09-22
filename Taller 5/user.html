@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+
+    <meta charset='UTF-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Registro Usuario</title>
+    <link rel="stylesheet" href="usercss.css" />
+
+    </head>
+
+    <body> 
+
+        <div class="title1">
+            <h1 class="userRegister"> Registro Usuarios: </h1><br><br>
+            <form id="Form">
+
+                <input class="Name" id="Name" name="name" type="text" placeholder="Nombre"><br><br>
+                <input class="LastName" id="LastName" name="lastname" type="text" placeholder="Apellido"><br><br>
+                <input class="Date" id="Date" name="date" type="date"><br><br>
+                <input class="Email" id="Email" name="email" type="text" placeholder="Correo"><br><br>
+                <input class="User" id="User" name="user" type="text" placeholder="Usuario"><br><br>
+                <input class="Password" id="Password" name="password" type="password" placeholder="Contraseña"><br><br>
+                <input class="Cpassword" id="Cpassword" name="cpassword" type="password" placeholder="Confirmar Contraseña"><br><br>
+
+                <p>¿Ha sufrido enfermedades? <input class="Enfermedad" id="Enfermedad" name="Enfermedad" type="checkbox" onchange="showContent()"></p><br><br>
+                <p class="EnfermedadC" id="EnfermedadC" name="EnfermedadC">
+                    ¿Ha sufrido enfermedades contagiosas? <input id="EnfermedadCheck" type="checkbox" onchange="showContent()"></p><br><br>
+                <input class="EnfermedadName" id="EnfermedadName" name="EnfermedadName" type="text" placeholder="¿Cúal enfermedad?"><br><br>
+
+                <button class="buttomR" id="buttomR" type="submit">Registrar</button>
+                <p class="Warnings" id="Warnings"> </p>
+            </form>
+        </div>
+
+
+        <div class="title2">
+            <h1 class="Register"> Usuario Guardado: </h1><br><br>
+            <form>
+
+                <p>Nombre:</p><p id="Name2" class="Name2"></p><br>
+                <p>Apellido:</p><p id="LastName2" id="LastName2"> </p><br>
+                <p>Fecha:</p><p id="Date2" class="Date2"> </p><br>
+                <p>Correo:</p><p id="Email2" class="Email2"> </p><br>
+                <p>Usuario:</p><p id="User2" class="User2"></p> <br>
+                <p>Contraseña:</p><p id="Password2" class="Password2"> </p><br>
+                <p>¿Ha sufrido enfermedad? :</p><p id="Enfermedad2" class="Enfermedad2"> </p><br>
+                <p>¿Ha sufrido enfermedades contagiosas? :</p> <p id="EnfermedadC2" class="EnfermedadC2"> </p><br>
+                <p>¿Cúal enfermedad? :</p><p id="EnfermedadName2" class="EnfermedadName2"> </p>
+            </form>
+            <button class="buttomV" onclick="location.href='index.html'">Volver</button>
+        </div>
+
+        <!-- Scripts -->
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"> </script>
+        <script src='user.js'></script>
+
+    </body>
+
+</html>

@@ -1,0 +1,183 @@
+<html xmlns="http://www.uis.edu.co" lang="es" xml:lang="es">
+
+<head>
+    <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.6/build/pure-min.css"
+        integrity="sha384-Uu6IeWbM+gzNVXJcM9XV3SohHtmWE+3VGi496jvgX1jyvDTXfdK+rfZc8C1Aehk5" crossorigin="anonymous">
+    <title>Complete los Siguientes Datos</title>
+    <script defer src='scriptpassword.js'></script>
+    <script defer src='scriptusername.js'></script>
+    <script defer src='scriptdatos.js'></script>
+    <script defer src='fechas.js'></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+    </script>
+    <script src="script.js"></script>
+</head>
+
+<style>
+    /* Style the submit button */
+    input[type=submit] {
+        background-color: #04AA6D;
+        color: white;
+    }
+
+    /* Style the container for inputs */
+    .container {
+        background-color: #f1f1f1;
+        padding: 20px;
+    }
+
+    /* The message box is shown when the user clicks on the password field */
+
+    .mensaje {
+        display: none;
+        background: #ececec;
+        color: #000;
+        position: relative;
+        padding: 20px;
+        margin: 20px auto 20px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        border-radius: 5px;
+    }
+
+    .mensaje p {
+        padding: 10px 35px;
+        font-size: 18px;
+    }
+
+    #message8 p {
+        padding: 5px;
+        margin-top: 5px;
+        font-size: 14px;
+    }
+
+    /* Add a green text color and a checkmark when the requirements are right */
+    .valid {
+        color: green;
+    }
+
+    .valid:before {
+        position: relative;
+        left: -35px;
+        content: "✔";
+    }
+
+    /* Add a red text color and an "x" icon when the requirements are wrong */
+    .invalid {
+        color: red;
+    }
+
+    .invalid:before {
+        position: relative;
+        left: -35px;
+        content: "✖";
+    }
+
+    #aligned-enfermedad {
+        width: 700px;
+        height: 85px;
+        display: none;
+    }
+</style>
+
+<body>
+    <form id='form' class="pure-form pure-form-stacked">
+        <label>
+            <h2>Registro de usuarios</h2>
+            Las casillas marcadas con un * son requeridas.
+        </label>
+        <fieldset>
+            <div class="pure-control-group">
+                <label for="aligned-name">Nombre</label>
+                <input type="text" id="aligned-name" placeholder="Nombre" maxlength="25" />
+                <span class="pure-form-message-inline"></span>
+            </div>
+            <div id="message4" class="mensaje">
+                <h3>El nombre debe contener lo siguiente:</h3>
+                <p id="nombre" class="invalid">El nombre debe tener como maximo <b>25 caracteres</b></p>
+            </div>
+            <div class="pure-control-group">
+                <label for="aligned-name">Apellido</label>
+                <input type="text" id="aligned-surname" placeholder="Apellido" maxlength="26" />
+                <span class="pure-form-message-inline"></span>
+            </div>
+            <div id="message5" class="mensaje">
+                <h3>El apellido debe contener lo siguiente:</h3>
+                <p id="apellido" class="invalid">El apellido debe tener como maximo <b>25 caracteres</b></p>
+            </div>
+            <div class="pure-control-group">
+                <label for="txtbirthdate">Fecha nacimiento</label>
+                <input id="txtbirthdate" type="text" maxlength="10" placeholder="mm/dd/yyyy" onkeyup="getAgeVal(0)"
+                    onblur="getAgeVal(0)">
+            </div>
+            <div class="pure-control-group">
+                <label for="txtage">Edad</label>
+                <input type="text" name="txtage" id="txtage" autocomplete="off" disabled style="color: #04AA6D;">
+            </div>
+            <div class="pure-control-group">
+                <label for="aligned-name">Username *</label>
+                <input type="text" id="aligned-username" placeholder="Username" required="" maxlength="25" />
+                <span class="pure-form-message-inline"></span>
+            </div>
+            <div id="message7" class="mensaje">
+                <h3>El usuario debe contener lo siguiente:</h3>
+                <p id="usuario" class="invalid">El usuario debe contener entre:<b>10 y 25 caracteres</b></p>
+            </div>
+            <div class="pure-control-group">
+                <label for="aligned-password">Password *</label>
+                <input type="password" id="aligned-password" placeholder="Password" required=""
+                    pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" maxlength="20" />
+                <span class="pure-form-message-inline"></span>
+            </div>
+            <div id="message" class="mensaje">
+                <h3>La contraseña debe contener lo siguiente:</h3>
+                <p id="letter" class="invalid">Una letra <b>minuscula</b> </p>
+                <p id="capital" class="invalid">Una letra <b>mayuscula</b></p>
+                <p id="number" class="invalid">Un <b>numero</b></p>
+                <p id="length" class="invalid">Minimo <b>15 caracteres</b> y maximo <b>20 caracteres</b></p>
+            </div>
+            <div class="pure-control-group">
+                <label for="aligned-confirmarpassword">Confirmar password *</label>
+                <input type="password" id="aligned-confirmarpassword" placeholder="Confirmar password" required=""
+                    pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" maxlength="20" />
+                <span class="pure-form-message-inline"></span>
+            </div>
+            <div id="message2" class="mensaje">
+                <h3>La contraseña debe contener lo siguiente:</h3>
+                <p id="igual" class="invalid">La contrasena debe ser <b>Igual</b> a la anterior</p>
+            </div>
+            <div class="pure-control-group">
+                <label for="aligned-email">Correo electr&oacute;nico *</label>
+                <input type="email" id="aligned-email" placeholder="Correo electr&oacute;nico" required=""
+                    maxlength="130" />
+                <span class="pure-form-message-inline"></span>
+            </div>
+            <div id="message3" class="mensaje">
+                <h3>La contraseña debe contener lo siguiente:</h3>
+                <p id="email" class="invalid">El correo debe tener menos de <b>120 caracteres</b></p>
+            </div>
+            <div class="pure-control-group">
+                <label for="departamento">Departamento: *</label>
+                <select class="browser-default" id="departamento" required="">
+                    <option value="">Seleccione...</option>
+                </select>
+            </div>
+            <div class="pure-control-group">
+                <label for="municipio">Municipio: *</label>
+                <select class="browser-default" id="municipio" required="">
+                    <option value="">Seleccione...</option>
+                </select>
+            </div>
+            <div class="pure-controls">
+                <label for="aligned-cb" class="pure-checkbox">
+                    <input type="checkbox" id="aligned-cb" /> He leido los terminos y condiciones.
+                </label>
+                <button type="submit" class="pure-button pure-button-primary">Submit</button>
+            </div>
+        </fieldset>
+    </form>
+</body>
+
+</html>
