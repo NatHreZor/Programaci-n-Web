@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% load static %}
+
+
+{% block headers %}
+<title>Persona</title>
+{% endblock %}
+
+{% block content %}
+<div class="container lista">
+    <ul class="list-group">
+        {% for Persona in Persona %} <!--autor in autores-->
+        <li class="list-group-item">
+            {{ Persona.nombre }} &nbsp;<a href="{% url 'Persona_view' Persona.id %}" class="btn btn-sm btn-success">Detalles</a>&nbsp;
+            <a href="{% url 'Persona_actualizar' Persona.id %}" class="btn btn-sm btn-warning">actualizar</a>&nbsp;
+            <a href="{% url 'Persona_eliminar' Persona.id %}" class="btn btn-sm btn-danger">eliminar</a></li>
+        {% endfor %}
+    </ul>    
+</div>
+
+{% endblock %}
